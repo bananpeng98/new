@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/bananpeng98/new.git"
   },
+  "bin": {
+    "new": "index.js"
+  },
   "author": "Eric Norman",
   "license": "ISC",
   "bugs": {

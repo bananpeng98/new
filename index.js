@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const inquirer = require('inquirer');
 const config = require('./config');
 const exec = require('child_process').execSync;
