@@ -1,2 +1,2 @@
 # new
-A project creation manager
+A quick and dirty project creation manager

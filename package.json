@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bananpeng98/new/issues"
   },
-  "homepage": "https://github.com/bananpeng98/new#readme"
+  "homepage": "https://github.com/bananpeng98/new#readme",
+  "dependencies": {
+    "inquirer": "^4.0.1"
+  }
 }

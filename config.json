@@ -1,0 +1,7 @@
+{
+    "starters": [{
+        "name": "typescript-library-starter",
+        "repo": "git@github.com:alexjoverm/typescript-library-starter.git",
+        "type": "node"
+    }]
+}
