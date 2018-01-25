@@ -20,16 +20,18 @@ inquirer.prompt({
         choices: config.starters.map(repo => repo.name)
     }).then((value) => {
         const starter = config.starters.find(repo => repo.name === value['starter']);
-
+        
         if(!name) {
-            name = starter.repo.substring(starter.repo.lastIndexOf('/') + 1, starter.repo.lastIndexOf('.git'))
+            name = starter.name;
         }
 
-        exec(`git clone ${starter.repo} ${name}`, {stdio:[0,1,2]});
+        const command = starter.command.replace(new RegExp('\{\{name\}\}', 'g'), name);
+        
+        exec(command, {stdio:[0,1,2]});
 
-        if (starter.type === 'node') {
-            console.log('Running npm install...');
-            exec('npm install', { cwd: name, stdio: [0, 1, 2] });
-        }
+        starter.install.forEach(installer => {
+            console.log(`Running ${installer}...`);
+            exec(installer, { cwd: name, stdio: [0, 1, 2] });
+        });
     });
 });
