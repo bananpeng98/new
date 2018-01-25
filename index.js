@@ -31,7 +31,7 @@ inquirer.prompt({
 
         starter.install.forEach(installer => {
             console.log(`Running ${installer}...`);
-            exec(installer, { cwd: name, stdio: [0, 1, 2] });
+            exec(installer.replace(new RegExp('\{\{name\}\}', 'g'), name), { cwd: name, stdio: [0, 1, 2] });
         });
     });
 });
