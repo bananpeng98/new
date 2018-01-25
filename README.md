@@ -19,4 +19,4 @@ Example config:
 }
 ```
 
-`{{name}}` is a placeholder to replace with the name of the project.
+`{{name}}` is a placeholder to replace with the `PROJECT_NAME`.
