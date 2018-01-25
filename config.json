@@ -6,18 +6,6 @@
             "npm install"
         ]
     }, {
-        "name": "express-webpack-starter",
-        "command": "git clone git@github.com:bananpeng98/express-webpack-starter.git {{name}}",
-        "install": [
-            "npm install"
-        ]
-    }, {
-        "name": "webpack-starter",
-        "command": "git clone git@github.com:bananpeng98/webpack-starter.git {{name}}",
-        "install": [
-            "npm install"
-        ]
-    }, {
         "name": "react-typescript-starter",
         "command": "create-react-app {{name}} --scripts-version=react-scripts-ts",
         "install": []
